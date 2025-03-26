@@ -1,0 +1,33 @@
+{% extends 'shopapp/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    {% translate 'Orders List' %}
+{% endblock %}
+
+{% block body %}    
+    {% for order in object_list %}
+    <li>
+        <p><a href="{% url 'shopapp:order_detail' pk=order.pk %}">Detais</a></p>
+        <p>{% translate 'Who' %}: {% firstof order.user.first_name order.user.username %}</p>
+        <p>{% translate 'Address' %}: {{order.delivery_address}}</p>
+        <p>{% translate 'Pcode' %}: {{order.promocode}}</p>
+        {% translate 'Products' %}:
+        <ul>
+            {% for product in order.products.all %}
+                <li>{{ product.name }} for {{ product.price }}</li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% empty %}
+        {% translate 'Nothing to show..' %}
+    {% endfor %}
+
+    <div>
+        <a href ="{% url "shopapp:order_create" %}">
+            {% translate 'Create Order' %}
+        </a>
+    </div>
+
+{% endblock %}

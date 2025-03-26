@@ -1,0 +1,21 @@
+{% extends 'shopapp/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+   {% translate 'Update Order'%}
+{% endblock %}
+
+{% block body %}
+    <h1>{% translate 'Update Order' %}</h1>
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">{% translate 'Update Order' %}</button> 
+        </form>
+    </div>
+    <div>
+        <a href ="{% url 'shopapp:orders' %}">{% translate 'Back to Orders' %}</a>
+    </div>
+{% endblock %}

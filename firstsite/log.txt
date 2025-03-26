@@ -1,0 +1,6 @@
+2025-03-25 03:06:13,397 [WARNING] django.request:  Not Found: /ru/shop/orders/1/user
+2025-03-25 03:06:45,910 [WARNING] django.request:  Not Found: /ru/shop/orders/user
+2025-03-25 03:54:43,269 [INFO] django.utils.autoreload:  /home/deniska/Projects/DJANGO/python_django/firstsite/shopapp/views.py changed, reloading.
+2025-03-25 03:54:44,228 [INFO] django.utils.autoreload:  Watching for file changes with StatReloader
+2025-03-25 04:00:30,571 [INFO] django.utils.autoreload:  /home/deniska/Projects/DJANGO/python_django/firstsite/shopapp/views.py changed, reloading.
+2025-03-25 04:00:31,226 [INFO] django.utils.autoreload:  Watching for file changes with StatReloader

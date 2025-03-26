@@ -1,0 +1,23 @@
+2025-03-25 03:00:47,547 [INFO] django.utils.autoreload:  Watching for file changes with StatReloader
+2025-03-25 03:01:52,762 [INFO] django.utils.autoreload:  /home/deniska/Projects/DJANGO/python_django/firstsite/shopapp/views.py changed, reloading.
+2025-03-25 03:01:53,323 [INFO] django.utils.autoreload:  Watching for file changes with StatReloader
+2025-03-25 03:02:58,606 [INFO] django.utils.autoreload:  /home/deniska/Projects/DJANGO/python_django/firstsite/shopapp/views.py changed, reloading.
+2025-03-25 03:02:59,313 [INFO] django.utils.autoreload:  Watching for file changes with StatReloader
+2025-03-25 03:05:49,668 [WARNING] django.request:  Not Found: /user/orders
+2025-03-25 03:06:04,054 [WARNING] django.request:  Forbidden (Permission denied): /ru/shop/orders/1/
+Traceback (most recent call last):
+  File "/home/deniska/Projects/DJANGO/python_django/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deniska/Projects/DJANGO/python_django/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deniska/Projects/DJANGO/python_django/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deniska/Projects/DJANGO/python_django/venv/lib/python3.12/site-packages/django/contrib/auth/mixins.py", line 108, in dispatch
+    return self.handle_no_permission()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deniska/Projects/DJANGO/python_django/venv/lib/python3.12/site-packages/django/contrib/auth/mixins.py", line 48, in handle_no_permission
+    raise PermissionDenied(self.get_permission_denied_message())
+django.core.exceptions.PermissionDenied

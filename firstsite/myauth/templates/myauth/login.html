@@ -1,0 +1,43 @@
+{% extends 'myauth/base.html' %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block body %}
+    <form method="post">
+        {% csrf_token %}
+
+        {% comment %} {{ form.as_p }} {% endcomment %}
+
+        {% if error %}
+        <p style="color: red">
+            {{error}}
+        </p>      
+
+
+        {% endif %}
+        
+        <p>
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" required value="{{user.username}}">
+        </p>
+        <p>
+            <label for="password">User Password:</label>
+            <input type="password" id="password" name="password" required">
+        </p>
+        
+        <button type="submit">Login</button>
+    </form> 
+    {% if user and user.username %}
+    <br>
+    <p><a href="/admin/">log as {{user.username}}</a></p>   
+    <br><br>
+    <p><a href="{% url 'myauth:pre_logout' user.username %}" >{{user.username}} logout</a></p>
+
+    {% else %}
+    <br>
+    <p><a href="{% url 'myauth:register' %}"> Register </a></p>
+    {% endif %}
+    
+{% endblock %}

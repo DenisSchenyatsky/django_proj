@@ -1,0 +1,45 @@
+{% extends 'myauth/base.html' %}
+
+{% block title %}
+   Update Profile
+{% endblock %}
+
+{% block body %}
+    <h1>Update Profile</h1>
+    <div>
+        <form method="post"  enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            {% comment %} <p>Username: {{ profile.user.username }}</p>
+            <div>
+            <label for="profile.user.first_name">First name: </label>
+            <input type="text" id="profile.user.first_name" name="profile.user.first_name" required value="{{profile.user.first_name}}">
+            </div>
+
+            <div>
+            <label for="profile.user.last_name">Last name:</label>
+            <input type="text" id="profile.user.last_name" name="profile.user.last_name" required value="{{profile.user.last_name}}">
+            </div>
+
+            <div>
+            <label for="profile.user.email">Email:</label>
+            <input type="text" id="profile.user.email" name="profile.user.email" required value="{{profile.user.email}}">
+            </div>
+
+            <div>
+            <label for="profile.bio">Biography:</label>
+            <textarea  id="profile.bio" name="profile.bio" required value="{{profile.bio}}"></textarea>
+            </div>
+            
+            <div>
+            <label for="profile.avatar">Email:</label>
+            <input type="text" id="profile.avatar" name="profile.avatar" required value="{{profile.avatar.url}}">
+            </div>
+             {% endcomment %}
+            <div>
+            <button type="submit">Update Profile</button> 
+            </div>
+        </form>
+    </div>
+    
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'shopapp/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+     {% translate 'Confirm Delete' %} {{ object.name }}
+{% endblock %}
+
+{% block body %}    
+    <h1> {% translate 'ARE YOU SURE?' %}</h1>
+    <h2>{% translate 'Product' %}</h2>
+    <h1>{{object.name}}</h1>
+    <h2>{% translate 'will be deleted' %}</h2>
+    <br>
+    <div>
+        <a href="{% url 'shopapp:product_detail' pk=object.pk %}"
+        >{% translate 'Back to Product-details' %}</a>
+    </div>
+    <br>
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">{% translate 'DELETE' %}</button> 
+        </form>
+    </div>
+{% endblock %}

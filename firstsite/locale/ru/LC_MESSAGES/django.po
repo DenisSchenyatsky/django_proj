@@ -1,0 +1,280 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-19 04:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: firstsite/settings.py:138
+msgid "English"
+msgstr "Англицкий"
+
+#: firstsite/settings.py:139
+msgid "Russian"
+msgstr "Русский"
+
+#: myauth/views.py:157
+msgid "welcome hello world"
+msgstr "Привет мир"
+
+#: myauth/views.py:162
+#, python-brace-format
+msgid "one product"
+msgid_plural "{count} products"
+msgstr[0] "{count} Продукт"
+msgstr[1] "{count} Продукта"
+msgstr[2] "{count} Продуктов"
+msgstr[3] "{count} Продуктов"
+
+#: shopapp/templates/shopapp/groups-list.html:6
+msgid "Groups List"
+msgstr "Список групп"
+
+#: shopapp/templates/shopapp/groups-list.html:10
+msgid "Groups"
+msgstr "Группы"
+
+#: shopapp/templates/shopapp/groups-list.html:16
+#: shopapp/templates/shopapp/product_form.html:17
+msgid "Create"
+msgstr "Внести в бд"
+
+#: shopapp/templates/shopapp/groups-list.html:22
+msgid "Groups are empty"
+msgstr "Нету групп"
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:6
+msgid "Confirm Delete Order"
+msgstr "Подтвердить Удаление"
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:10
+#: shopapp/templates/shopapp/product_confirm_delete.html:10
+msgid "ARE YOU SURE?"
+msgstr "ТОЧНО ?"
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:11
+#: shopapp/templates/shopapp/order_detail.html:6
+#: shopapp/templates/shopapp/order_detail.html:11
+msgid "Order"
+msgstr "Ордер"
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:13
+#: shopapp/templates/shopapp/product_confirm_delete.html:13
+msgid "will be deleted"
+msgstr "исчезнет"
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:16
+#, fuzzy
+#| msgid "Back to Product-details"
+msgid "Back to Order-details"
+msgstr "Назад в Детали Продукта"
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:23
+#: shopapp/templates/shopapp/product_confirm_delete.html:24
+msgid "DELETE"
+msgstr "Удалить"
+
+#: shopapp/templates/shopapp/order_detail.html:6
+msgid "details"
+msgstr "Детали"
+
+#: shopapp/templates/shopapp/order_detail.html:12
+#: shopapp/templates/shopapp/orders-list.html:13
+msgid "Who"
+msgstr "Кто"
+
+#: shopapp/templates/shopapp/order_detail.html:13
+#: shopapp/templates/shopapp/orders-list.html:14
+msgid "Address"
+msgstr "Адрес"
+
+#: shopapp/templates/shopapp/order_detail.html:14
+#: shopapp/templates/shopapp/orders-list.html:15
+msgid "Pcode"
+msgstr "П-Код"
+
+#: shopapp/templates/shopapp/order_detail.html:15
+#: shopapp/templates/shopapp/orders-list.html:16
+#: shopapp/templates/shopapp/products-list.html:10
+msgid "Products"
+msgstr "Товары"
+
+#: shopapp/templates/shopapp/order_detail.html:23
+msgid "Update Order Values"
+msgstr "Внести изменения"
+
+#: shopapp/templates/shopapp/order_detail.html:27
+msgid "Back to Orders List"
+msgstr "Назад в Список покупок"
+
+#: shopapp/templates/shopapp/order_detail.html:31
+msgid "Delete Order"
+msgstr "Удалить информацию о покупке"
+
+#: shopapp/templates/shopapp/order_form.html:6
+#: shopapp/templates/shopapp/order_form.html:10
+#: shopapp/templates/shopapp/orders-list.html:29
+msgid "Create Order"
+msgstr "Внести запись о покупке"
+
+#: shopapp/templates/shopapp/order_form.html:15
+msgid "Add Order"
+msgstr "Внести запись о покупке"
+
+#: shopapp/templates/shopapp/order_form.html:19
+#: shopapp/templates/shopapp/order_update_form.html:19
+msgid "Back to Orders"
+msgstr "Назад в Покупки"
+
+#: shopapp/templates/shopapp/order_update_form.html:6
+#: shopapp/templates/shopapp/order_update_form.html:10
+#: shopapp/templates/shopapp/order_update_form.html:15
+#, fuzzy
+#| msgid "Update"
+msgid "Update Order"
+msgstr "Внести изменения"
+
+#: shopapp/templates/shopapp/orders-list.html:6
+#, fuzzy
+#| msgid "Products List"
+msgid "Orders List"
+msgstr "Список товаров"
+
+#: shopapp/templates/shopapp/orders-list.html:24
+#: shopapp/templates/shopapp/products-list.html:34
+msgid "Nothing to show.."
+msgstr "Нечего показывать"
+
+#: shopapp/templates/shopapp/product_confirm_delete.html:6
+msgid "Confirm Delete"
+msgstr "Подтвердить Удаление"
+
+#: shopapp/templates/shopapp/product_confirm_delete.html:11
+#: shopapp/templates/shopapp/product_detail.html:6
+#: shopapp/templates/shopapp/product_detail.html:10
+msgid "Product"
+msgstr "Наименование Товара"
+
+#: shopapp/templates/shopapp/product_confirm_delete.html:17
+msgid "Back to Product-details"
+msgstr "Назад в Детали Продукта"
+
+#: shopapp/templates/shopapp/product_detail.html:12
+msgid "Description"
+msgstr "Описание"
+
+#: shopapp/templates/shopapp/product_detail.html:13
+msgid "Product Price"
+msgstr "Стоимость"
+
+#: shopapp/templates/shopapp/product_detail.html:14
+#: shopapp/templates/shopapp/products-list.html:27
+msgid "Discount"
+msgstr "Скидка"
+
+#: shopapp/templates/shopapp/product_detail.html:15
+msgid "Archived"
+msgstr "В архиве"
+
+#: shopapp/templates/shopapp/product_detail.html:21
+msgid "Images"
+msgstr "Изображения"
+
+#: shopapp/templates/shopapp/product_detail.html:27
+msgid "No Images Uploaded Yet"
+msgstr "Не подгружены ущё"
+
+#: shopapp/templates/shopapp/product_detail.html:37
+msgid "Update Values"
+msgstr "Внести изменения"
+
+#: shopapp/templates/shopapp/product_detail.html:43
+msgid "Back to products list"
+msgstr "Назад в Список товаров"
+
+#: shopapp/templates/shopapp/product_detail.html:49
+msgid "Delete Product"
+msgstr "Удалить продукт"
+
+#: shopapp/templates/shopapp/product_form.html:6
+#: shopapp/templates/shopapp/product_form.html:10
+#: shopapp/templates/shopapp/products-list.html:42
+msgid "Create Product"
+msgstr "Внести товар в бд"
+
+#: shopapp/templates/shopapp/product_form.html:22
+msgid "Back to Products"
+msgstr "Назад в Товары"
+
+#: shopapp/templates/shopapp/product_update_form.html:6
+#: shopapp/templates/shopapp/product_update_form.html:15
+msgid "Update"
+msgstr "Внести изменения"
+
+#: shopapp/templates/shopapp/product_update_form.html:10
+msgid "Update Product Values"
+msgstr "Изменить данные товара в бд"
+
+#: shopapp/templates/shopapp/product_update_form.html:20
+msgid "Back to Product"
+msgstr "Назад в Товары"
+
+#: shopapp/templates/shopapp/products-list.html:6
+msgid "Products List"
+msgstr "Список товаров"
+
+#: shopapp/templates/shopapp/products-list.html:12
+#, python-format
+msgid ""
+"\n"
+"        Only one product\n"
+"\n"
+"        "
+msgid_plural ""
+"\n"
+"        There are %(product_count)s products\n"
+"    "
+msgstr[0] ""
+"\n"
+"        Где-то %(product_count)s продукт\n"
+"    "
+msgstr[1] ""
+"\n"
+"        Всего %(product_count)s продукта\n"
+"    "
+msgstr[2] ""
+"\n"
+"        Где-то %(product_count)s продуктОВ\n"
+"    "
+msgstr[3] ""
+"\n"
+"        Где-то %(product_count)s продукт\n"
+"    "
+
+#: shopapp/templates/shopapp/products-list.html:24
+msgctxt "product_name"
+msgid "Name"
+msgstr "Название"
+
+#: shopapp/templates/shopapp/products-list.html:25
+msgid "Price"
+msgstr "Стоимость"
+
+#: shopapp/templates/shopapp/products-list.html:26
+msgid "no_discount"
+msgstr "без скидок"

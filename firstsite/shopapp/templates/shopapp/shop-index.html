@@ -1,0 +1,53 @@
+{% extends 'shopapp/base.html' %}
+
+{% load cache %}
+
+{% block title %}
+    Shop Index
+{% endblock %}
+
+{% block body %}
+
+<div>
+    <ul>
+        {% for some_item, some_value in some_list %}
+        <li>{{ some_item }} <> {{ some_value }}</li>
+        
+            {% if some_item|length == 6 %}
+            <span>* * * * * * *</span>
+            {% endif %}
+
+        {% empty %}
+        Nothing to show..
+        {% endfor %}
+    </ul>
+</div>
+
+<div>
+    {{some_str|linenumbers|linebreaks|title}}
+
+    <table cellspacing="10" border="2">
+        {% for row_num in '123' %}
+        <tr>
+            {% for col_num in '1234' %}
+
+            <td>{{col_num}} | {{row_num}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+<div>
+    Time running: {{ time_running }}
+</div>
+
+{% cache 10 some_key_for_cache %}
+<div>
+    {% lorem 3 p %}
+</div>
+{% endcache %}
+
+{% endblock %}
+

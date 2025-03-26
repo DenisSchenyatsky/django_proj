@@ -1,0 +1,158 @@
+[
+    {
+        "model": "shopapp.product",
+        "pk": 1,
+        "fields": {
+            "name": "Laptop",
+            "description": "abc\r\ndef\r\nqwerty\r\nzxcvbert",
+            "price": "100.00",
+            "discount": 12,
+            "created_at": "2025-03-08T06:41:20.360Z",
+            "archived": false,
+            "created_by": null
+        }
+    },
+    {
+        "model": "shopapp.product",
+        "pk": 2,
+        "fields": {
+            "name": "Desktop",
+            "description": "ABCDEF",
+            "price": "0.01",
+            "discount": 110,
+            "created_at": "2025-03-08T06:41:20.360Z",
+            "archived": true,
+            "created_by": null
+        }
+    },
+    {
+        "model": "shopapp.product",
+        "pk": 3,
+        "fields": {
+            "name": "Prostokwasha",
+            "description": "xyzzyxxyzzyx\r\nxyzzyxxyzzyx\r\nxyzzyxxyzzyx\r\nxyzzyxxyzzyx\r\nxyzzyxxyzzyx\r\nxyzzyxxyzzyx\r\nxyzzyxxyzzyx\r\nxyzzyxxyzzyx",
+            "price": "17.50",
+            "discount": 18,
+            "created_at": "2025-03-08T06:41:20.360Z",
+            "archived": true,
+            "created_by": null
+        }
+    },
+    {
+        "model": "shopapp.product",
+        "pk": 4,
+        "fields": {
+            "name": "Some Product",
+            "description": "SAMPLE\r\nDESCRIPTION\r\n...",
+            "price": "5.00",
+            "discount": 2,
+            "created_at": "2025-03-10T04:18:57.795Z",
+            "archived": false,
+            "created_by": null
+        }
+    },
+    {
+        "model": "shopapp.product",
+        "pk": 6,
+        "fields": {
+            "name": "product - x",
+            "description": "...\r\ndescription\r\n...",
+            "price": "10.20",
+            "discount": 150,
+            "created_at": "2025-03-10T05:52:54.396Z",
+            "archived": true,
+            "created_by": null
+        }
+    },
+    {
+        "model": "shopapp.product",
+        "pk": 7,
+        "fields": {
+            "name": "Table",
+            "description": "STOL",
+            "price": "1500.00",
+            "discount": 15,
+            "created_at": "2025-03-10T06:38:25.217Z",
+            "archived": false,
+            "created_by": null
+        }
+    },
+    {
+        "model": "shopapp.product",
+        "pk": 8,
+        "fields": {
+            "name": "New Product",
+            "description": "Sample\r\nExample",
+            "price": "1000.00",
+            "discount": 16,
+            "created_at": "2025-03-12T03:22:00.775Z",
+            "archived": false,
+            "created_by": null
+        }
+    },
+    {
+        "model": "shopapp.product",
+        "pk": 9,
+        "fields": {
+            "name": "Product of Admin",
+            "description": "Test for inserted field",
+            "price": "10.00",
+            "discount": 100,
+            "created_at": "2025-03-13T14:14:37.795Z",
+            "archived": true,
+            "created_by": null
+        }
+    },
+    {
+        "model": "shopapp.product",
+        "pk": 10,
+        "fields": {
+            "name": "Product of Admin",
+            "description": "Test for 'user_by saved'",
+            "price": "1.00",
+            "discount": 100,
+            "created_at": "2025-03-13T14:27:03.085Z",
+            "archived": true,
+            "created_by": 1
+        }
+    },
+    {
+        "model": "shopapp.product",
+        "pk": 11,
+        "fields": {
+            "name": "Pr",
+            "description": "",
+            "price": "0.00",
+            "discount": 0,
+            "created_at": "2025-03-13T14:27:38.416Z",
+            "archived": true,
+            "created_by": 1
+        }
+    },
+    {
+        "model": "shopapp.product",
+        "pk": 12,
+        "fields": {
+            "name": "Product of ADMIN",
+            "description": "TEST",
+            "price": "0.00",
+            "discount": 0,
+            "created_at": "2025-03-13T14:34:04.860Z",
+            "archived": false,
+            "created_by": 1
+        }
+    },
+    {
+        "model": "shopapp.product",
+        "pk": 13,
+        "fields": {
+            "name": "XXX",
+            "description": "zzzZ",
+            "price": "0.00",
+            "discount": 0,
+            "created_at": "2025-03-13T15:45:20.819Z",
+            "archived": false,
+            "created_by": 7
+        }
+    }
+]

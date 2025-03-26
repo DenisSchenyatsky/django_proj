@@ -1,0 +1,33 @@
+{% extends 'shopapp/base.html' %}
+
+
+{% load cache %}
+
+
+{% block title %}
+    Orders User List 
+{% endblock %}
+
+{% block body %}
+<h1>CHECK CACHE, SoME VALUE :  {% now "u" %}</h1>
+<h2>Orders List of '{% firstof object_list.first.user.first_name object_list.first.user.username "NOBODY" %}'</h2>    
+
+{% cache 20 userinfo firstof object_list.first.user.first_name object_list.first.user.username "NOBODY" %}
+<h1>CHECK CACHE, SOME VALUE FOR CURRENT USER :  {% now "u" %}</h1>
+    {% for order in object_list %}
+    <li>
+        <p><a href="{% url 'shopapp:order_detail' pk=order.pk %}">Detais</a></p>
+        <p> Address: {{order.delivery_address}}</p>
+        <p>Pcode: {{order.promocode}}</p>
+        <p>Products:</p>
+        <ul>
+            {% for product in order.products.all %}
+                <li>{{ product.name }} for {{ product.price }}</li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% empty %}
+        Nothing to show..
+    {% endfor %}
+{% endcache %}     
+{% endblock %}

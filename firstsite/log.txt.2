@@ -1,0 +1,24 @@
+2025-03-25 02:58:54,685 [ERROR] django.request:  Internal Server Error: /ru/shop/orders/export/10/user/
+Traceback (most recent call last):
+  File "/home/deniska/Projects/DJANGO/python_django/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deniska/Projects/DJANGO/python_django/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deniska/Projects/DJANGO/python_django/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deniska/Projects/DJANGO/python_django/venv/lib/python3.12/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deniska/Projects/DJANGO/python_django/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deniska/Projects/DJANGO/python_django/firstsite/shopapp/views.py", line 394, in get
+    data["DEMO_CHECK_CACHE"] = str(random.random())
+    ~~~~^^^^^^^^^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2025-03-25 03:00:00,209 [INFO] django.utils.autoreload:  /home/deniska/Projects/DJANGO/python_django/firstsite/shopapp/views.py changed, reloading.
+2025-03-25 03:00:00,767 [INFO] django.utils.autoreload:  Watching for file changes with StatReloader
+2025-03-25 03:00:46,967 [INFO] django.utils.autoreload:  /home/deniska/Projects/DJANGO/python_django/firstsite/shopapp/views.py changed, reloading.

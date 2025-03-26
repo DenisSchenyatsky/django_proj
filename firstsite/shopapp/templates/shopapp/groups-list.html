@@ -1,0 +1,35 @@
+{% extends 'shopapp/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    {% translate 'Groups List' %}
+{% endblock %}
+
+{% block body %}
+    <h2>{% translate 'Groups' %}:</h2>
+    
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">{% translate 'Create' %}</button>
+        </form>
+    </div>
+
+    <div>
+        {% if not groups %}
+        <h2>{% translate 'Groups are empty' %}</h2>
+        {% else %}
+            {% for group_item in groups %}
+                <li>
+                    <div>{{group_item.name}}</div>
+                        {% for permission in group_item.permissions.all %}
+                            <li>{{permission.name}} ({{permission.codename}})</li>
+                        {% endfor %}
+                    </div>
+                </li>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock %}

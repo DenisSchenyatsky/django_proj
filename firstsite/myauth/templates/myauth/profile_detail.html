@@ -1,0 +1,40 @@
+{% extends 'myauth/base.html' %}
+
+{% block title %}
+  User info Profile
+{% endblock %}
+
+{% block body %}
+
+    <h1>User info</h1>
+    {% if profile %}
+        <h2>Details:</h2>
+        <p>Username: {{ profile.user.username }}</p>
+        <p>First name: {{ profile.user.first_name }}</p>
+        <p>Last name: {{ profile.user.last_name }}</p>
+        <p>Email: {{ profile.user.email }}</p>
+        <p>Biograpy: {{ profile.bio }}</p>
+        {% if profile.avatar %}
+            <img src={{ profile.avatar.url }} alt={{ profile.avatar.name }}>
+        {% endif %}
+
+        {% if user.is_authenticated and user == profile.user %}
+        <br>
+        <div> 
+            <a href="{% url 'myauth:profile-update' pk=user.pk %}"> Update profile </a>
+        </div>
+        {% endif %}
+
+    {% else %}
+        <h2>User is anonymous</h2>
+    {% endif %}
+
+    <br>
+    <p><a href="{% url 'myauth:users-list' %}" > ALL Users </a></p>
+
+    {% if user and user.username %}
+    <br>
+    <p><a href="{% url 'myauth:pre_logout' user.username %}" >{{user.username}} logout</a></p>
+    {% endif %}
+
+{% endblock %}

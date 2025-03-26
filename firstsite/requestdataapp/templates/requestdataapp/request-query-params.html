@@ -1,0 +1,18 @@
+{% extends "requestdataapp/base.html" %}
+
+{% block title %}
+    DEMO
+{% endblock %}
+
+{% block body %}
+    <h1> Hi, req method: {{ request.GET.name }} </h1>
+
+    <div>
+        <pre>
+            a = {{a}}
+            b = {{b}}
+            a + b = {{c}}
+        </pre>
+    </div>
+
+{% endblock %}
